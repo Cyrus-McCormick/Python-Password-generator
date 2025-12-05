@@ -17,27 +17,27 @@ if(pws_length > 0):
 
     #looks to see if the user wants upper case letter
     want_upper = input('Do you want upper case characters? yes/no: ')
-    if(want_upper == 'yes' or want_upper == 'Yes'):
+    if(want_upper == 'yes' or want_upper == 'Yes' or want_upper == 'Y' or want_upper == 'y'):
         get_upper=True
-    elif(want_upper == 'no' or want_upper == 'No'):
+    elif(want_upper == 'no' or want_upper == 'No'or want_upper == 'N' or want_upper == 'n'):
         get_upper=False
     else:
         raise ValueError("Not a valid input for length to getnerate")
     
     #looks to see if the user wants numbers
-    want_number = input('Do you want numbers characters? yes/no: ')
-    if(want_number == 'yes' or want_number == 'Yes'):
+    want_number = input('Do you want numbers? yes/no: ')
+    if(want_number == 'yes' or want_number == 'Yes' or want_number == 'Y' or want_number == 'y'):
         get_number=True
-    elif(want_number == 'no' or want_number == 'No'):
+    elif(want_number == 'no' or want_number == 'No' or want_number == 'N' or want_number == 'n'):
         get_number=False
     else:
         raise ValueError("Not a valid input for length to getnerate")
 
     #looks to see if the user wants special characters
     want_special = input('Do you want special case characters? yes/no: ')
-    if(want_special == 'yes' or want_special == 'Yes'):
+    if(want_special == 'yes' or want_special == 'Yes' or want_special == 'Y' or want_special == 'y'):
         get_special=True
-    elif(want_special == 'no' or want_special == 'No'):
+    elif(want_special == 'no' or want_special == 'No' or want_special == 'N' or want_special == 'n'):
         get_special=False
     else:
         raise ValueError("Not a valid input for length to getnerate")
@@ -71,7 +71,6 @@ if(pws_length > 0):
     for x in range(len(build_password)):
         password += build_password[x]
 
-    print(build_password)
     print(password)
 else:
     raise ValueError("Not a valid input for length to getnerate")
