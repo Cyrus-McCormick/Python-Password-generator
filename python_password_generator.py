@@ -7,7 +7,7 @@ numbers = ('0','1','2','3','4','5','6','7','8','9')
 special_characters = ('!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '[', ']', '{', '}', '|', ';', ':', "'", '"', ',', '.', '/', '?', '~')
 
 #finds the length of the password the user wands
-pws_length = int(input('Enter how long you wnat your passowrd: '))
+pws_length = int(input('Enter how long you wnat your passowrd as a number: '))
 
 
 build_password = []
